@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #222;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  min-height: 430px;
+
+  background-color: #079ab6;
+  clip-path: polygon(0 0,
+      100% 0,
+      100% 82%,
+      0 100%);
+
+  padding: 70px 8% 100px;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0;
+}
+
+.hero-image {
+  width: 390px;
+  position: relative;
+
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+.hero-image img {
+  height: 320px;
+  object-fit: cover;
+}
+
+.hero-image h1 {
+  position: absolute;
+  left: 15px;
+  bottom: 5px;
+
+  margin: 0;
+
+  color: white;
+  font-size: 38px;
+}
+
+.about {
+  width: 500px;
+  min-height: 250px;
+
+  background-color: white;
+
+  padding: 35px;
+
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+.about h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.about p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+
+  margin-top: 25px;
+}
+
+main {
+  background-color: white;
+}
+
+.work {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 20px 30px 80px;
+}
+
+.work>h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.projects {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 35px 25px;
+}
+
+.project {
+  background-color: white;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  height: 180px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+
+  text-align: center;
+}
+
+.red {
+  background-color: #a91c20;
+}
+
+.purple {
+  background-color: #7665c4;
+}
+
+.green {
+  background-color: #579447;
+}
+
+.pink {
+  background-color: #bd5cb0;
+}
+
+.orange {
+  background-color: #d98c2d;
+}
+
+.blue {
+  background-color: #1c94c7;
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-title h3 {
+  margin: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.project-title div {
+  display: flex;
+  gap: 10px;
+}
+
+.project-title a {
+  font-size: 14px;
+}
+
+.project-info p {
+  margin-bottom: 0;
+
+  color: #666;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.contact {
+  background-color: #079ab6;
+
+  color: white;
+
+  padding: 60px 8%;
+}
+
+.contact-content {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-text h2 {
+  margin-top: 0;
+
+  font-size: 30px;
+}
+
+.contact-text p {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+
+  margin-top: 25px;
+
+  font-size: 22px;
+}
+
+.contact-image {
+  width: 480px;
+}
+
+.contact-image img {
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+
+  .hero {
+    min-height: auto;
+
+    padding: 60px 30px 100px;
+
+    clip-path: polygon(0 0,
+        100% 0,
+        100% 90%,
+        0 100%);
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 70%;
+  }
+
+  .about {
+    width: 80%;
+    margin-top: -30px;
+
+    position: relative;
+    z-index: 2;
+  }
+
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .contact-content {
+    gap: 30px;
+  }
+
+  .contact-image {
+    width: 45%;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .hero {
+    padding: 40px 20px 80px;
+
+    clip-path: polygon(0 0,
+        100% 0,
+        100% 96%,
+        0 100%);
+  }
+
+  .hero-image {
+    width: 90%;
+  }
+
+  .hero-image img {
+    height: 300px;
+  }
+
+  .hero-image h1 {
+    font-size: 30px;
+  }
+
+  .about {
+    width: 95%;
+
+    padding: 25px;
+  }
+
+
+  .work {
+    padding: 20px 20px 60px;
+  }
+
+
+  .projects {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+
+  .project-image {
+    height: 200px;
+  }
+
+
+  .contact {
+    padding: 50px 25px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-image {
+    width: 100%;
+  }
+
+  .contact-image img {
+    height: 280px;
+  }
+
+}
